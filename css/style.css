@@ -1,3 +1,57 @@
+:root {
+	--white: #ffffff;
+	--gray: #dddddd;
+	--dark-gray: #777777;
+	--black: #000000;
+	--blue: #2222ff;
+	--light-blue: #5555ff;
+}
+
+html {font-size: 16px;}
+p {font-size: 1rem;}
+h1, h2, h3, h4, h5, h6 {font-weight: bold;}
+h1 {font-size: 1.5rem;}
+h2 {font-size: 1.4rem;}
+h3 {font-size: 1.3rem;}
+h4 {font-size: 1.2rem;}
+h5 {font-size: 1.1rem;}
+h6 {font-size: 1rem;}
+li {font-size: 1rem;}
+
 body {
 	font-family: Arial, sans-serif;
+	margin: 0;
+	background-color: var(--gray);
+	color: var(--black);
+}
+
+.main-wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	background-color: var(--white);
+}
+
+.main-menu-wrapper {
+	display: flex;
+}
+.main-menu {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+.main-menu li {
+
+}
+.main-menu li a {
+	padding: 1.2rem;
+	line-height: 2rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+input[type="text"] {
+	border: 1px solid var(--dark-gray);
+	border-radius: 0.2rem;
 }
