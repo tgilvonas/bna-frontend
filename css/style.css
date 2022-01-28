@@ -5,6 +5,8 @@
 	--black: #000000;
 	--blue: #2222ff;
 	--light-blue: #5555ff;
+	--default-padding: 0.5rem;
+	--default-margins: 0.5rem;
 }
 
 html {font-size: 16px;}
@@ -31,21 +33,17 @@ body {
 	background-color: var(--white);
 }
 
-.main-menu-wrapper {
+.display-flex {
 	display: flex;
 }
 .main-menu {
-	display: flex;
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
 }
-.main-menu li {
-
-}
 .main-menu li a {
 	display: inline-block;
-	padding: 0.5rem;
+	padding: var(--default-padding);
 	font-size: 1.2rem;
 	font-weight: bold;
 	text-decoration: none;
@@ -53,7 +51,7 @@ body {
 
 .search-form {
 	margin-left: auto;
-	padding: 0.5rem;
+	padding: var(--default-padding);
 }
 .btn-search img {
 	width: 0.6rem;
@@ -63,4 +61,15 @@ body {
 input[type="text"], button {
 	border: 1px solid var(--dark-gray);
 	border-radius: 0.2rem;
+}
+
+.articles-in-column article, .articles-in-grid article {
+	margin: var(--default-margins);
+}
+
+.side-banners {
+	width: 336px;
+}
+.side-banners .banner-wrapper {
+	margin: var(--default-margins);
 }
