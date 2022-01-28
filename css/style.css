@@ -55,6 +55,10 @@ body {
 	margin-left: auto;
 	padding: 0.5rem;
 }
+.btn-search img {
+	width: 0.6rem;
+	height: 0.6rem;
+}
 
 input[type="text"], button {
 	border: 1px solid var(--dark-gray);
