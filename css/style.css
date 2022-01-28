@@ -7,18 +7,19 @@
 	--light-blue: #5555ff;
 	--default-padding: 0.5rem;
 	--default-margins: 0.5rem;
+	--default-text-element-margins: 0.2rem 0;
 }
 
 html {font-size: 16px;}
-p {font-size: 1rem;}
-h1, h2, h3, h4, h5, h6 {font-weight: bold;}
-h1 {font-size: 1.5rem;}
-h2 {font-size: 1.4rem;}
-h3 {font-size: 1.3rem;}
-h4 {font-size: 1.2rem;}
-h5 {font-size: 1.1rem;}
-h6 {font-size: 1rem;}
-li {font-size: 1rem;}
+h1, h2, h3, h4, h5, h6 { font-weight: bold; margin: --var(--default-text-element-margins); }
+p { font-size: 1rem;  }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.3rem; }
+h4 { font-size: 1.2rem; }
+h5 { font-size: 1.1rem; }
+h6 { font-size: 1rem; }
+li { font-size: 1rem; }
 
 body {
 	font-family: Arial, sans-serif;
@@ -26,6 +27,8 @@ body {
 	background-color: var(--gray);
 	color: var(--black);
 }
+
+.clearfix { clear: both; }
 
 .main-wrapper {
 	width: 1200px;
@@ -65,6 +68,14 @@ input[type="text"], button {
 
 .articles-in-column article, .articles-in-grid article {
 	margin: var(--default-margins);
+}
+
+article h2 a {
+	text-decoration: none;
+}
+article .lead-image {
+	max-width: 100%;
+	height: auto;
 }
 
 .side-banners {
