@@ -3,13 +3,14 @@
 	--gray: #dddddd;
 	--dark-gray: #999999;
 	--black: #000000;
-	--blue: #2222CC;
-	--light-blue: #5555ff;
+	--blue: #0000cc;
+	--light-blue: #2222ff;
 	--default-padding: 0.5rem;
 	--default-margin: 0.5rem;
 	--default-margin-2x: 1rem;
 	--side-banners-width: 336px;
 	--border-radius: 0rem;
+	--transition: 0.5s;
 }
 
 html { font-size: 16px; }
@@ -53,6 +54,10 @@ body {
 	margin: 25px 0 0 22px;
 }
 
+.main-menu-wrapper {
+	background: rgb(0,0,119);
+	background: linear-gradient(180deg, rgba(0,0,119,1) 0%, rgba(34,34,204,1) 35%);
+}
 .main-menu {
 	padding: 0 0 0 var(--default-padding);
 	margin: 0;
@@ -64,7 +69,7 @@ body {
 	font-size: 1.2rem;
 	font-weight: bold;
 	text-decoration: none;
-	color: var(--blue);
+	color: var(--white);
 }
 
 .search-form {
@@ -130,6 +135,10 @@ article p {
 	background-color: var(--blue);
 	color: var(--white);
 	border-radius: var(--border-radius);
+	transition: var(--transition);
+}
+.pagination a.page-link:hover {
+	background-color: var(--light-blue);
 }
 
 .side-banners {
@@ -137,6 +146,10 @@ article p {
 }
 .side-banners .banner-wrapper {
 	padding: var(--default-padding);
+}
+.side-banners .banner-wrapper img {
+	max-width: 100%;
+	height: auto;
 }
 
 footer {
