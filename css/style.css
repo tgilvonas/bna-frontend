@@ -95,7 +95,7 @@ article p {
 }
 
 .side-banners {
-	width: var(--side-banners-width);
+	width: calc(var(--side-banners-width) + (2 * var(--default-margin)));
 }
 .side-banners .banner-wrapper {
 	margin: var(--default-margin);
