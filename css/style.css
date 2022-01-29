@@ -49,6 +49,9 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.site-header-logo {
+	margin: 25px 0 0 22px;
+}
 
 .main-menu {
 	padding: 0 0 0 var(--default-padding);
@@ -87,7 +90,7 @@ input[type="text"], button {
 }
 
 article {
-	margin: var(--default-margin);
+	padding: var(--default-padding);
 }
 article h2 a {
 	text-decoration: none;
@@ -130,10 +133,10 @@ article p {
 }
 
 .side-banners {
-	width: calc(var(--side-banners-width) + (2 * var(--default-margin)));
+	width: calc(var(--side-banners-width) + (2 * var(--default-padding)));
 }
 .side-banners .banner-wrapper {
-	margin: var(--default-margin);
+	padding: var(--default-padding);
 }
 
 footer {
