@@ -43,7 +43,11 @@ body {
 }
 
 .header {
-	
+	height: 187px;
+	background-image: url('../img/bna-header.jpg');
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .main-menu {
