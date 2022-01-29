@@ -3,14 +3,16 @@
 	--gray: #dddddd;
 	--dark-gray: #999999;
 	--black: #000000;
-	--blue: #2222dd;
+	--blue: #2222CC;
 	--light-blue: #5555ff;
 	--default-padding: 0.5rem;
 	--default-margin: 0.5rem;
+	--default-margin-2x: 1rem;
 	--side-banners-width: 336px;
+	--border-radius: 0rem;
 }
 
-html {font-size: 16px;}
+html { font-size: 16px; }
 h1, h2, h3, h4, h5, h6 { font-weight: bold; margin: var(--default-margin) 0; }
 p { font-size: 1rem; }
 h1 { font-size: 1.5rem; }
@@ -50,6 +52,7 @@ body {
 	font-size: 1.2rem;
 	font-weight: bold;
 	text-decoration: none;
+	color: var(--blue);
 }
 
 .search-form {
@@ -63,7 +66,7 @@ body {
 
 input[type="text"], button {
 	border: 1px solid var(--dark-gray);
-	border-radius: 0.2rem;
+	border-radius: var(--border-radius);
 }
 
 .main-content {
@@ -79,6 +82,7 @@ article {
 }
 article h2 a {
 	text-decoration: none;
+	color: var(--blue);
 }
 article p {
 	margin: 0 0 var(--default-margin) 0;
@@ -92,6 +96,28 @@ article p {
 	max-width: 100%;
 	height: auto;
 	margin: 0 var(--default-margin) var(--default-margin) 0;
+}
+
+.pagination {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: var(--default-margin-2x) 0 var(--default-margin-2x) var(--default-margin);
+}
+.pagination .page-link {
+	display: inline-block;
+	margin-right: var(--default-margin);
+	width: 3rem;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+}
+.pagination a.page-link {
+	background-color: var(--blue);
+	color: var(--white);
+	border-radius: var(--border-radius);
 }
 
 .side-banners {
