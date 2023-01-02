@@ -41,7 +41,11 @@ body {
 
 .main-menu-wrapper {
   background: rgb(0,0,119);
-  background: linear-gradient(180deg, rgba(0,0,119,1) 0%, rgba(34,34,204,1) 35%);
+  background: var(--bg-gradient);
+  .mobile-menu-opener {
+    width: 34px;
+    text-align: center;
+  }
   .main-menu {
     padding: 0 0 0 var(--default-padding);
     margin: 0;

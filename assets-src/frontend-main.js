@@ -7,10 +7,10 @@ $(document).ready(function(){
         direction: 'left',
         swipeDistance: 120
     });
-    $('#open-mobile-menu').click(function(){
+    $('.mobile-menu-opener').click(function(){
         mobileTouchMenu.show();
     });
-    $('#close-mobile-menu').click(function(){
+    $('.close-mobile-menu').click(function(){
         mobileTouchMenu.hide();
     });
 });

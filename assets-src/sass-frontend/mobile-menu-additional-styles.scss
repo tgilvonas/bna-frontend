@@ -1,4 +1,25 @@
-h1 {
-  color: black;
+.mobile-touch-menu {
+  background: rgb(0,0,119);
+  background: var(--bg-gradient);
+  .close-menu-btn-wrapper {
+    margin: var(--default-margin);
+    text-align: right;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    border-top: 1px solid var(--white);
+    li {
+      a {
+        display: block;
+        padding: var(--default-padding);
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--white);
+        border-bottom: 1px solid var(--white);
+      }
+    }
+  }
 }
-
