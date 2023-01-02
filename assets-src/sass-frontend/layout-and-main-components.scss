@@ -82,6 +82,10 @@ input[type="text"], button {
   padding: var(--default-padding);
   .articles {
     max-width: calc(100% - var(--side-banners-width) - (2 * var(--default-padding)));
+    .banner-between-articles {
+      margin: 0 var(--default-margin);
+      display: none;
+    }
     article {
       padding: var(--default-padding);
       h2 {
@@ -170,6 +174,9 @@ footer {
     }
     .articles {
       max-width: 100%;
+      .banner-between-articles {
+        display: block;
+      }
     }
   }
 }
