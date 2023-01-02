@@ -43,6 +43,7 @@ body {
   background: rgb(0,0,119);
   background: var(--bg-gradient);
   .mobile-menu-opener {
+    display: none;
     width: 34px;
     text-align: center;
   }
@@ -84,6 +85,7 @@ input[type="text"], button {
     article {
       padding: var(--default-padding);
       h2 {
+        color: var(--blue);
         a {
           text-decoration: none;
           color: var(--blue);
@@ -148,4 +150,43 @@ footer {
   padding: calc(var(--default-padding) * 2);
   background-color: var(--dark-gray);
   text-align: center;
+}
+
+@media screen and (max-width: 1440px) {
+  .main-menu-wrapper {
+    .mobile-menu-opener {
+      display: block;
+    }
+    .main-menu {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main-content {
+    .side-banners {
+      display: none;
+    }
+    .articles {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .site-header-logo {
+    max-width: 280px;
+  }
+  .main-content {
+    .articles {
+      article {
+        .lead-image {
+          max-width: unset;
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
 }
