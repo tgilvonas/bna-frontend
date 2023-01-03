@@ -127,6 +127,9 @@ input[type="text"], button {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
+    &.page-position-indicator {
+      width: 120px;
+    }
   }
   a.page-link {
     background-color: var(--blue);
